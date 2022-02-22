@@ -10,7 +10,6 @@ class VendingMachine
 
     def returnSumCoins(money, product_price)
         @@balance = money - product_price
-
         coins = [500,100,50,10,5,1]
         for coin in coins
             calculation(coin)
@@ -23,7 +22,7 @@ class VendingMachine
         @@balance = @@balance - (coin_price * result)
         @@sum_coins += result
     end
-    
+
 end
 
 vending_machine = VendingMachine.new
